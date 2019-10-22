@@ -27,6 +27,15 @@ for ch in commands:
         tess.color("green")
     elif ch == 'b':          #turn blue
         tess.color("blue")
+    elif ch == 'S':
+        tess.pendown()
+        tess.penup()
+    elif ch == 'I':
+        tess.left(45)
+    elif ch == 'r':
+        tess.right(45)
+    elif ch == 'p':
+        tess.color(purple)
     else:                   #for any other character, print an error message
         print("Error: do not know the command:", c)
 
